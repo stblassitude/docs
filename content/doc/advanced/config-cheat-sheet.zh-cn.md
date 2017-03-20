@@ -65,11 +65,14 @@ menu:
 - `KEY_FILE`: 启用HTTPS的密钥文件。
 - `STATIC_ROOT_PATH`: 存放模板和静态文件的根目录，默认是 Gitea 的根目录。
 - `ENABLE_GZIP`: 启用应用级别的 GZIP 压缩。
-- `LANDING_PAGE`: 未登录用户的默认页面，可选 `home` 或 `explore`.
+- `LANDING_PAGE`: 未登录用户的默认页面，可选 `home` 或 `explore`。
+- `LFS_START_SERVER`: 是否启用 git-lfs 支持. 可以为 `true` 或 `false`， 默认是 `false`。
+- `LFS_CONTENT_PATH`: 存放 lfs 命令上传的文件的地方，默认是 `data/lfs`。
+- `LFS_JWT_SECRET`: LFS 认证密钥，改成自己的。
 
 ## Database (`database`)
 
-- `DB_TYPE`: 数据库类型，可选 `mysql`, `postgres`, `tidb` 或 `sqlite3`。
+- `DB_TYPE`: 数据库类型，可选 `mysql`, `postgres`, `mssql`, `tidb` 或 `sqlite3`。
 - `HOST`: 数据库服务器地址和端口。
 - `NAME`: 数据库名称。
 - `USER`: 数据库用户名。
